@@ -398,6 +398,7 @@ static const CGFloat kCancelButtonShadowHeightRatio = 0.333f;
     self.window.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.window.opaque = NO;
     self.window.rootViewController = actionSheetVC;
+    self.window.windowLevel = UIWindowLevelAlert;
     [self.window makeKeyAndVisible];
 }
 
